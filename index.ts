@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json());
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8090;
 
 app.use("/cart", cartRoute);
 app.use("/auth", LoginRouter);
@@ -35,5 +35,5 @@ app.listen(port, async () => {
     console.log(err);
   }
 
-  console.log("Sever is live at http://localhost:8080");
+  console.log("Sever is live at http://localhost:8090");
 });
